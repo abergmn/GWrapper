@@ -7,18 +7,10 @@ logs
 *.log
 npm-debug.log*
 
-# Testing
-coverage/
-jest-coverage/
-*.test.js
-
-# Build output 
-dist/
-
 # Env files 
 .env
 .env.*
 
-# OS + Editor files
-.DS_Store
-.vscode/
+# Other
+.npmignore
+NOTES.txt

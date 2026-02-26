@@ -1,16 +1,15 @@
-const GWrapper = require("gwrapper");
+const GWrapper = require("../src/index");
 
-const GWrapper = require("gwrapper");
-
-const app = new GWrapper({
+let example_client = new GWrapper({
     splashWindow: {
-        width: 800, height: 600,
+        width: 400,
+        height: 300,
         g_loadFile: "splash.html"
-    },
-    mainWindow: {
-        width: 800, height: 600,
-        g_loadURL: "https://example.com/"
-    },
+    }, mainWindow: {
+        width: 800,
+        height: 600,
+        g_loadURL: "https://example.com"
+    }
 });
 
-app.init();
+example_client.init();
